@@ -1,4 +1,4 @@
-# ✦ Aura AI — Personal AI Assistant (Groq Edition)
+# ✦ Aura AI — Personal AI Assistant 
 
 A fully functional, modern AI assistant built with **React + Node.js/Express + Groq API**.
 **100% Free** — no credit card, no paid API keys required.
@@ -73,21 +73,7 @@ aura-ai-groq/
 npm run install:all
 ```
 
-### Step 2 — Get your FREE Groq API key
-
-1. Go to → **https://console.groq.com**
-2. Sign up with Google or GitHub (free, no card)
-3. Click **API Keys** → **Create API Key**
-4. Copy the key ✅
-
-### Step 3 — Get your FREE Weather API key
-
-1. Go to → **https://openweathermap.org/api**
-2. Click **Sign Up** (free, no card)
-3. Go to **My API Keys** → copy the default key ✅
-4. Note: new keys activate within 10 minutes
-
-### Step 4 — Configure environment
+### Step 2 — Configure environment
 
 ```bash
 cd backend
@@ -102,7 +88,7 @@ GROQ_MODEL=llama-3.1-8b-instant
 OPENWEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxx
 ```
 
-### Step 5 — Run the app
+### Step 3 — Run the app
 
 ```bash
 # From project root:
