@@ -1,0 +1,93 @@
+/* ─── Global Reset & Theme ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Dark theme (default) */
+  --bg:           #0e0e11;
+  --bg2:          #16161b;
+  --bg3:          #1e1e26;
+  --surface:      #22222e;
+  --surface2:     #2a2a38;
+  --border:       rgba(255,255,255,0.08);
+  --border2:      rgba(255,255,255,0.14);
+  --text:         #f0f0f5;
+  --text2:        #9999b0;
+  --text3:        #5a5a72;
+  --accent:       #7c6af7;
+  --accent2:      #9d8fff;
+  --accent-bg:    rgba(124,106,247,0.12);
+  --accent-border:rgba(124,106,247,0.3);
+  --user-bg:      linear-gradient(135deg,#7c6af7,#9d8fff);
+  --ai-bg:        #1e1e26;
+  --green:        #4cde8a;
+  --red:          #ff5b5b;
+  --radius:       18px;
+  --radius-sm:    10px;
+  --shadow:       0 8px 32px rgba(0,0,0,0.4);
+  --font:         'DM Sans', -apple-system, sans-serif;
+  --mono:         'DM Mono', monospace;
+}
+
+[data-theme="light"] {
+  --bg:           #f4f4f8;
+  --bg2:          #ffffff;
+  --bg3:          #eeeef4;
+  --surface:      #ffffff;
+  --surface2:     #f0f0f6;
+  --border:       rgba(0,0,0,0.08);
+  --border2:      rgba(0,0,0,0.14);
+  --text:         #1a1a2e;
+  --text2:        #555570;
+  --text3:        #9999b0;
+  --accent:       #6857f5;
+  --accent2:      #8470ff;
+  --accent-bg:    rgba(104,87,245,0.08);
+  --accent-border:rgba(104,87,245,0.25);
+  --user-bg:      linear-gradient(135deg,#6857f5,#8470ff);
+  --ai-bg:        #f0f0f6;
+  --shadow:       0 8px 32px rgba(0,0,0,0.1);
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 4px; }
+
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 16px rgba(124,106,247,0.4); }
+  50%       { box-shadow: 0 0 28px rgba(124,106,247,0.7); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; } 50% { opacity: 0.4; }
+}
+
+@keyframes bounce-dot {
+  0%, 60%, 100% { transform: translateY(0); background: var(--text3); }
+  30%            { transform: translateY(-6px); background: var(--accent); }
+}
+
+@keyframes modal-in {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
