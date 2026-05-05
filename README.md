@@ -99,22 +99,6 @@ Open **http://localhost:3000** 🎉
 
 ---
 
-## 🤖 Choosing a Groq Model
-
-Edit `GROQ_MODEL` in your `.env`:
-
-| Model | Speed | Smarts | Free/day |
-|---|---|---|---|
-| `llama-3.1-8b-instant` | ⚡⚡⚡ Fastest | ⭐⭐⭐⭐ | 14,400 |
-| `llama-3.3-70b-versatile` | ⚡⚡ Fast | ⭐⭐⭐⭐⭐ Smartest | 1,000 |
-| `mixtral-8x7b-32768` | ⚡⚡ Fast | ⭐⭐⭐⭐ | 1,000 |
-| `gemma2-9b-it` | ⚡⚡ Fast | ⭐⭐⭐⭐ | 14,400 |
-
-**Recommended:** Start with `llama-3.1-8b-instant` (fastest + most free requests).
-Switch to `llama-3.3-70b-versatile` if you want smarter answers.
-
----
-
 ## 🔌 API Endpoints
 
 | Method | Endpoint | Description |
